@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+   <remote name="yoctoproject"
+              fetch="http://git.yoctoproject.org/git" />
+
+   <remote name="Openembedded"
+              fetch="http://git.openembedded.org/git" />
+
+  <default revision="master" sync-j="2" />
+
+  <project path="hooks" remote="rdkgerrit" name="rdk/hooks" groups="rdk,oe,meta" />
+  <repo-hooks in-project="rdk/hooks" enabled-list="post-sync post-download" />
+
+  <!-- comcast/openembedded generic recipes -->
+  <project path="rdkmanifest" remote="tchgerrit" name="rdk/rdkmanifest" groups="manifest" />
+  <project path="poky" remote="yoctoproject" name="poky" groups="yocto" revision="krogoth" />
+  <project path="meta-openembedded" remote="openembedded" name="meta-openembedded" groups="oe" revision="krogoth" />
+  <project path="meta-raspberrypi" remote="yoctoproject" name="meta-raspberrypi" groups="yocto" revision="krogoth" />
+
+</manifest>
