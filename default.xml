@@ -4,7 +4,7 @@
    <remote name="yoctoproject"
               fetch="http://git.yoctoproject.org/git" />
 
-   <remote name="Openembedded"
+   <remote name="openembedded"
               fetch="http://git.openembedded.org/git" />
 
   <default revision="master" sync-j="2" />
