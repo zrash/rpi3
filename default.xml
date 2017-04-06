@@ -11,8 +11,8 @@
 
 
   <!-- comcast/openembedded generic recipes -->
-  <project path="poky" remote="yoctoproject" name="poky" groups="yocto" revision="krogoth" />
-  <project path="meta-openembedded" remote="openembedded" name="meta-openembedded" groups="oe" revision="krogoth" />
-  <project path="meta-raspberrypi" remote="yoctoproject" name="meta-raspberrypi" groups="yocto" revision="krogoth" />
+  <project path="poky" remote="yoctoproject" name="poky" groups="yocto" revision="krogoth" upstream="krogoth" />
+  <project path="meta-openembedded" remote="openembedded" name="meta-openembedded" groups="oe" revision="krogoth" upstream="krogoth" />
+  <project path="meta-raspberrypi" remote="yoctoproject" name="meta-raspberrypi" groups="yocto" revision="krogoth" upstream="krogoth" />
 
 </manifest>
