@@ -10,7 +10,7 @@
   <default revision="master" sync-j="2" />
 
 
-  <!-- comcast/openembedded generic recipes -->
+  <!-- RPi/openembedded generic recipes -->
   <project path="sources/poky" remote="yoctoproject" name="poky" groups="yocto" revision="krogoth"  />
   <project path="sources/meta-openembedded" remote="openembedded" name="meta-openembedded" groups="oe" revision="krogoth"  />
   <project path="sources/meta-raspberrypi" remote="yoctoproject" name="meta-raspberrypi" groups="yocto" revision="krogoth"  />
