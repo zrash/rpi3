@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+   <remote name="yoctoproject"
+              fetch="http://git.yoctoproject.org/git" />
+
+   <remote name="openembedded"
+              fetch="http://git.openembedded.org/" />
+
+  <default revision="master" sync-j="2" />
+
+
+  <!-- RPi/openembedded generic recipes -->
+  <project path="sources/poky" remote="yoctoproject" name="poky" groups="yocto" revision="krogoth"  />
+  <project path="sources/meta-openembedded" remote="openembedded" name="meta-openembedded" groups="oe" revision="krogoth"  />
+  <project path="sources/meta-raspberrypi" remote="yoctoproject" name="meta-raspberrypi" groups="yocto" revision="krogoth"  />
+
+</manifest>
